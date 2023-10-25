@@ -1,0 +1,197 @@
+.aa-contact-us-page-hero-image {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 170px;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(49, 63, 84, 0.7) !important;
+  }
+  
+  .aa-contact-us-page-hero-image::after {
+    content: " ";
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://www.filepicker.io/api/file/6tXGehKbQ3q4dfBl2LRi);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .aa-contact-us-page-hero-image .text-container {
+    max-width: 600px;
+  }
+  
+  .aa-contact-us-page-hero-image h2 {
+    font-weight: bold;
+    font-size: 49px;
+    color: #ffffff;
+  }
+  
+  .aa-contact-us-page-hero-image h3 {
+    font-size: 23px;
+    font-weight: 200;
+    color: #ffffff;
+  }
+  
+  .aa-contact-us-page-address p {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .aa-contact-us-page-hero-image .contact-form-anchor-link {
+    color: #fff;
+    font-size: 20px;
+    margin-left: -1em;
+    display: block;
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    bottom: 60px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+.container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea.form-control {
+  resize: none;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.contact-page-form input[type="text"],
+.contact-page-form input[type="email"],
+.contact-page-form textarea {
+  width: 100%; 
+  max-width: 350px; 
+  padding: 10px; 
+  margin: 5px 0; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.contact-form-box {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color:aqua;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* Contact Background */
+.contact-background {
+  background-color: #f9f9f9; /* Specify your desired background color */
+  /* Add any other styling properties you want for the background */
+}

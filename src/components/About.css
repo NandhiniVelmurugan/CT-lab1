@@ -1,0 +1,396 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(https://cdn.elearningindustry.com/wp-content/uploads/2019/09/online-courses-what-students-want.jpg);
+  background-position: left;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2px);
+  z-index: -1;
+  margin-bottom: 8px;
+}
+
+
+#landing-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+#landing-section h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 8.8px;
+  line-height: 1.2;
+}
+
+#landing-section p {
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color:whitesmoke;
+  text-align: center;
+  padding-top: 32px;
+  font-weight: 3000px;
+}
+
+
+#steps-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+#first-step {
+  background-color: #5acda6;
+}
+
+#second-step {
+  background-color: #91ac41;
+}
+
+#third-step {
+  background-color: #e4b476;
+}
+
+#fourth-step {
+  background-color: #f69dad;
+}
+
+.step-item {
+  width: 25%;
+  padding: 112px 48px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.step-item i {
+  font-size: 96px;
+  transition: all 0.3s;
+}
+
+.step-item:hover i {
+  transform: scale(1.1, 1.1);
+}
+
+.step-item h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.step-item p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#store-section {
+  width: 100%;
+  background-color: #f7eee2;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+#fresh-food-heading {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0;
+  margin-top: 35px;
+}
+
+#store-section > h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#store-desc {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  margin-bottom: 55px;
+}
+
+#store-items-wrapper {
+  display: flex;
+  justify-content: stretch;
+  margin: 0 auto;
+}
+
+.store-item {
+  width: 25%;
+  text-align: center;
+  padding: 24px;
+}
+
+.store-item:hover .icon-wrapper {
+  transform: scale(1.1, 1.1);
+}
+
+.icon-wrapper {
+  display: inline-block;
+  background-color: #e3b375;
+  border-radius: 50%;
+  padding: 40px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.icon-wrapper i {
+  font-size: 60px;
+}
+
+.store-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.store-item p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #8b8b99;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#testimonials-section {
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.testimonials-heading {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0;
+  margin-top: 35px;
+}
+
+#testimonials-section > h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#testimonials-desc {
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 auto;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  margin-bottom: 55px;
+}
+
+#testimonials-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-item {
+  width: 25%;
+  text-align: center;
+  background-color: #f5f6fb;
+  padding: 40px 30px;
+  margin: 16px;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  transition: box-shadow 0.3s;
+}
+
+.testimonial-item img {
+  width: 80px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
+
+.testimonial-message {
+  font-size: 14px;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial-item h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.job-role {
+  color: #8b8b99;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#follow-section {
+  display: flex;
+  justify-content: stretch;
+}
+
+#left-section {
+  width: 67%;
+  display: inline-block;
+  margin: 0;
+}
+
+#left-section img {
+  width: 100%;
+}
+
+#right-section {
+  width: 33.33%;
+  margin: 0;
+  display: inline-block;
+ 
+  background-position: left;
+  background-size: cover;
+}
+
+#right-section #text-wrapper {
+  margin: 115px;
+}
+
+#right-section #text-wrapper h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+#right-section #text-wrapper p {
+  color: #8b8b99;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+#subscribe-email {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: white;
+  padding: 12px;
+  color: #8b8b99;
+  font-size: 16px;
+  margin-top: 60px;
+  display: block;
+}
+
+#subscribe-btn {
+  background-color: #f69dad;
+  padding: 16px 42px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+#subscribe-btn:hover {
+  background-color: transparent;
+  color: #f69dad;
+  border: 1px solid #f69dad;
+}
+
+#stats-section {
+  width: 100%;
+  background-color: #f6fcfa;
+}
+
+#stats-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  padding: 100px 0;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: stretch;
+}
+
+.stats-item {
+  width: 25%;
+  padding: 0 64px;
+}
+
+.stats-item h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.stats-item p {
+  color: #57e3b5;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  margin: 0;
+}
+
+#video-section {
+  display: block;
+}
+
+#video-section > div {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  background-image: url('');
+  background-color: #f0f0f0; /* Fallback background color */
+  background-size: cover;
+  background-position: center top; /* Adjust the position if needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

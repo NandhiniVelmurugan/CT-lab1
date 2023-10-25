@@ -1,0 +1,254 @@
+/* CourseCard.css */
+
+/* Card styles */
+.course-card {
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image styles */
+  .course-card__image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inner content styles */
+  .course-card__inner {
+    padding: 16px;
+    flex: 1;
+  }
+  
+  .course-card__instructor {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .course-card__title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .course-card__meta-wrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .course-card__difficulty,
+  .course-card__time {
+    display: flex;
+    align-items: center;
+  }
+  
+  .course-card__difficulty i,
+  .course-card__time i {
+    margin-right: 5px;
+  }
+  
+  /* Button styles (Optional) */
+  .course-card__button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .join-course-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .video-class-button {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  /* Button hover styles (Optional) */
+  .course-card__button:hover {
+    filter: brightness(1.2);
+  }
+/* CourseCard.css */
+
+/* ... (Previous CSS styles) */
+
+/* Image styles */
+.course-card__image img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Scale and crop the image to fit the container */
+  }
+  
+  /* Image hover effect */
+  .course-card__image img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.2s;
+  }
+
+.course-card__buttons {
+    margin-top: 10px;
+  }
+  
+  .course-card__button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 45%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: #007bff;
+    color: #fff;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .course-card__button:last-child {
+    margin-right: 0;
+  }
+  
+  /* Hover effect for both buttons */
+  .course-card__button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .course-card__button.video-course {
+    background-color: #28a745;
+  }
+  
+  /* Hover effect for the "Video Course" button */
+  .course-card__button.video-course:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  /* Courses.css */
+
+/* Container for the courses */
+.courses-container {
+    text-align: center; /* Center align the content */
+    padding: 20px;
+  }
+  
+  /* Heading style (optional) */
+  .courses-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Flex container for the course cards */
+  .course-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    justify-content: center; /* Center align the cards horizontally */
+  }
+  
+  /* Individual course card */
+  .course-card {
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: left; /* Left align the content within each card */
+  }
+  
+  /* Image styles */
+  .course-card__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Inner content styles */
+  .course-card__inner {
+    padding: 16px;
+    flex: 1;
+  }
+  
+  /* Instructor name style */
+  .course-card__instructor {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Course title style */
+  .course-card__title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Meta information wrapper style */
+  .course-card__meta-wrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Difficulty and time styles */
+  .course-card__difficulty,
+  .course-card__time {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icon styles for difficulty and time */
+  .course-card__difficulty i,
+  .course-card__time i {
+    margin-right: 5px;
+  }
+  
+  /* Button styles (Optional) */
+  .course-card__buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .course-card__button {
+    flex: 1;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .course-card__button:first-child {
+    margin-right: 5px; /* Add spacing between buttons */
+  }
+  
+  /* Button hover styles (Optional) */
+  .course-card__button:hover {
+    filter: brightness(1.2);
+  }
+  

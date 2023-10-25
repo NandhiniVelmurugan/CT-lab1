@@ -1,0 +1,550 @@
+
+.ab{
+    margin: 0;
+    padding: 0;
+}
+.banner-area{
+    background-image: url('https://img.freepik.com/free-photo/young-female-university-graduate-academic-cap-sitting-table-smiling-pointing-left-future-lawyer-engineer-showing-idea_176420-14245.jpg?w=900&t=st=1694956473~exp=1694957073~hmac=6fafedba18dd1e6e87ab0b6f89827dc845bd658c9907fab5c542a966ad380bc9');
+    background-position: center center;
+    background-size:cover ;
+     height: 80vh;
+    width: auto;
+    margin: auto;
+    
+}
+.hero-content {
+
+	animation: slideIn 1s 1s forwards ease-in;
+}
+.banner-text{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    margin: 8% 10%;
+    text-align: center;
+}
+.banner-text h3{
+    text-align: center;
+    color:#000000;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'poppins' , sans-serif;
+}
+.banner-text p{
+    color:black;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.footer-container{
+	max-width: 1070px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	
+        background-color: #24262b;
+        padding: 30px 0; /* Adjust the padding to reduce the height */
+    
+}
+.footer-col{
+   width: 20%;
+   padding: 0 10px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.footer-col .social-links a:hover {
+  background-color: #ffffff; 
+  color: #000000; 
+  transform: scale(1.1); 
+}
+
+.simple-card {
+    display: flex;
+    
+    background-color:lightblue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    width: 30%;
+    height: 100%;
+  }
+  
+  .simple-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .card-description {
+   text-align: center;
+  }
+  
+  .card-description h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card-description p {
+    font-size: 16px;
+    color: #666;
+  }
+ 
+.simple-card-container {
+    display:flex;
+    justify-content:space-between; 
+  }
+
+.simple-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  }
+
+.popular-courses-heading {
+    text-align: center; 
+    font-size: 24px; 
+    margin-top: 20px; 
+    margin-bottom: 30px;
+    color:blue; 
+}
+    .popular-courses-heading2 {
+        text-align:center; 
+        margin-right: 350px;
+        color:brown; 
+  }
+  .popular-courses-heading3 {
+    text-align: center;
+    font-size: 24px; 
+    margin-top: 20px; 
+    margin-bottom: 30px;
+    color:#24262b; 
+}
+  .vertical-card:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+  .vertical-card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards horizontally */
+  }
+  .vertical-card {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .vertical-card img {
+    max-width: 100px; /* Adjust the image size as needed */
+    margin-right: 10px; /* Add some spacing between image and text */
+  }
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon-link {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin as needed */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .icon-link:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+  }
+  .plan .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a grid with three equal columns */
+    gap: 1rem; /* Define the gap between grid items */
+}
+
+.plan .box-container .box {
+    text-align: center;
+    background: var(--background);
+    border-radius: .5rem;
+    border: var(--border);
+    border-top: var(--border-top);
+    border-left: var(--border-left);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem; /* Reduced padding */
+    backdrop-filter: blur(.3rem); /* Reduced blur */
+}
+
+.plan .box-container .box i {
+    color: var(--white);
+    font-size: 3rem; /* Reduced icon size */
+    padding: 1rem 0;
+}
+
+.plan .box-container .box .fa-plane {
+    transform: rotate(-45deg);
+}
+
+.plan .box-container .box h3 {
+    background:cornsilk; /* Slightly reduced background opacity */
+    font-size: 1.6rem; /* Reduced heading font size */
+    padding: 1rem 0.5rem; /* Reduced padding */
+    margin: 0.5rem 0; /* Reduced margin */
+    margin-top: 1rem; /* Reduced top margin */
+    color: var(--black);
+}
+
+.plan .box-container .box ul {
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.plan .box-container .box ul li {
+    padding: 0.5rem 0; /* Reduced padding */
+    color: var(--white);
+    font-size: 1.2rem; /* Reduced font size */
+}
+
+.plan .box-container .box a {
+    display: block;
+    background:cornsilk; /* Slightly reduced background opacity */
+    font-size: 1.6rem; /* Reduced font size */
+    padding: 1rem 0.5rem; /* Reduced padding */
+    margin: 0.5rem 0; /* Reduced margin */
+    margin-top: 1rem; /* Reduced top margin */
+    color: var(--black);
+    transition: .2s linear;
+}
+
+.plan .box-container .box a:hover {
+    letter-spacing: .1rem;
+}
+
+.plan .box-container .box .price {
+    font-size: 2rem; /* Reduced price font size */
+    padding-top: 1rem; /* Reduced top padding */
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.plan .box-container .box .price span {
+    font-size: 1em; /* Reduced span font size */
+    font-weight: normal;
+}
+
+.new {
+  --black:#130f40;
+  --white:black;
+  --gradient:linear-gradient(darkviolet, deeppink);
+  --background:rgba(165, 164, 192, 0.1);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --border:.2rem solid rgba(255,255,255,.1);
+  --border-top:.2rem solid rgba(255,255,255,.3);
+  --border-left:.2rem solid rgba(255,255,255,.3);
+
+}
+/* Add this CSS to your stylesheet or a separate CSS file */
+
+.banner-text button {
+  background-color: #007BFF; /* Button background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove the default button border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.banner-text button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+/* Style for the whole section */
+#supporters {
+  background-color: #f7f7f7; /* Set the background color */
+  padding: 40px 0; /* Add padding to the top and bottom */
+}
+
+/* Choose Section */
+.choose-section {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contentt h1 {
+  font-size: 36px; /* Reduced font size */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contentt p {
+  font-size: 16px; /* Reduced font size */
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+/* CSS with Reduced Spacing Between Service Boxes, Hover Effect, and Additional Styling */
+.services-container {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  overflow-x: auto;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.service-box {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-right: 2px; /* Adjust spacing between boxes */
+}
+
+/* Add hover effect */
+.service-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  border: 1px solid #007bff;
+}
+
+/* Adjust button styles on hover */
+.service-box button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* CSS for Image Hover Effects with Rotation */
+.service-box img {
+  max-width: 75px; /* Set the maximum width of the image */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Add hover effect with rotation */
+.service-box img:hover {
+  transform: scale(1.1) rotate(15deg); /* Scale up the image by 10% and rotate by 15 degrees on hover */
+  border-color: #0fb5d6; /* Change the border color on hover */
+}
+:root {
+  --strd-b-pdg: 15px 2rem;
+  --tag-pd: 12px 7px;
+  --strd-mobile-pdg: 1rem;
+  --strd-blk: #000000;
+  --strd-wht: #fff;
+  --tag-bc: #eaeaea;
+  --primary-bc: #f5f8fa;
+  --ft-hdr-hght: 400px;
+  --hdr-txt: 2.4rem;
+  --mrg-center: 0 auto;
+  --mrg--5: 5px;
+}
+
+.wNe-featured {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  height: var(--ft-hdr-hght);
+  position: relative;
+  background: linear-gradient(to top, #000000d9, rgb(255 255 255 / 0%)),
+    url(https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+}
+
+.wNe-featured-video {
+  width: 100%;
+  object-position: left;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wNe-featured-txt {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  color: var(--strd-wht);
+  font-size: var(--hdr-txt);
+}
+
+.wNe-body-inner {
+   padding: var(--strd-b-pdg);
+}
+
+.body-intro {
+  margin: 1rem 0;
+}
+
+.body-intro-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.body-intro-tag {
+  padding: var(--tag-pd);
+  border-radius: 8px;
+  flex: auto 1;
+  margin: var(--mrg--5);
+  color: var(--strd-blk);
+  background-color: var(--primary-bc);
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.body-intro-tag-active {
+  background-color: var(--strd-blk);
+  color: var(--strd-wht);
+}
+
+.body-statistics {
+  background-color: var(--primary-bc);
+}
+
+.body-statistics-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.body-statistics-content {
+  height: 250px;
+  width: calc(33.3333% - 64px);
+}
+
+.sectionalHeader {
+  font-size: 2rem;
+}
+
+.strd-p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+  color: rgb(81, 82, 84);
+  line-height: 1.5rem;
+}
+
+.body--padding {
+  padding: var(--strd-b-pdg);
+}
+
+@media only screen and (max-width: 850px) {
+ 
+  .wNe-featured-txt h3 {
+    font-size: 2rem;
+  }
+
+  .wNe-featured-txt span {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .body-statistics-content {
+    height: 155px;
+    width: 100%;
+  }
+
+  .sectionalHeader {
+    font-size: 1.6rem;
+  }
+
+  .body--padding {
+    padding: var(--strd-mobile-pdg);
+  }
+
+  .body-content-tag {
+    flex-direction: column;
+    height: auto;
+  }
+}

@@ -1,0 +1,106 @@
+/* App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* App.css */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(173, 216, 230, 0.5); /* Transparent color */
+    color: azure;
+    padding: 10px 20px;
+  }
+  
+  /* Rest of your CSS styles */
+  
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .nav-right {
+    margin-left: auto;
+  }
+  
+  .logo {
+    margin-left: 10px; 
+  }
+  
+  /* App.css */
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* This property ensures the image fits the container properly */
+  }
+  
+  
+  .nav-links li:first-child a {
+    margin-left: 10px; 
+  }
+  .nav-links li a {
+    color: #333; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+  }
+  
+  .nav-links li a:hover {
+    color:blue 
+  }
+  .cart-icon {
+    width: 25px; /* Adjust the width to match the desired size */
+    height: 25px; /* Adjust the height to match the desired size */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .nav-links.nav-right li:first-child a {
+    margin-left: 20px; /* Adjust the margin to control the space */
+  }
+  .cart-icon {
+    margin-left: 100px; /* Adjust the margin to control the position */
+  }
+  
+  /* NavBar.css */
+
+/* Rest of your CSS styles */
+
+/* Style for Login and Signup logos */
+.nav-links.nav-right li a img {
+    width: 40px; /* Increase the width for a larger logo */
+    height: 40px; /* Increase the height for a larger logo */
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover;
+  }
+  
+  /* Style for Login and Signup links */
+  .nav-links.nav-right li a {
+    display: flex; /* Allows for vertical alignment of logo and text */
+    align-items: center; /* Vertically align logo and text */
+    color: #333; /* Text color for Login and Signup links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-right: 10px; /* Adjust the margin to control the space between the logo and text */
+  }
+  
+  .nav-links.nav-right li a:hover {
+    color: blue; /* Text color when hovering over Login and Signup links */
+  }
+  .user-username
+  {
+    color:black;
+  }

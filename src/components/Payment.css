@@ -1,0 +1,113 @@
+/* Payment.css */
+
+/* Container for Background */
+.background-container {
+  background-image: url('https://www.chetu.com/img/payments/payments-main/sliderbg/payments-banner-1.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  min-height: 100vh; /* Covers the entire viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Payment Container Styles */
+.payment-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Heading Styles */
+/* (Your existing styles) */
+
+.payment-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Label Styles */
+.payment-label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Input Styles */
+.payment-input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.payment-input:focus {
+  border-color: #007bff;
+}
+
+/* Form Row Styles */
+.payment-form-row {
+  margin: 10px 0;
+}
+
+/* Button Styles */
+.payment-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+  background-color: #0056b3;
+}
+
+/* Select Styles */
+.payment-input select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.payment-input select:focus {
+  border-color: #007bff;
+}
+
+/* Optional: Add a background color to the selected option */
+.payment-input select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Optional: Style Cash on Delivery text for better visibility */
+.payment-input select option[value="cashOnDelivery"] {
+  font-weight: bold;
+}
+
+/* Optional: Style hover effect for select options */
+.payment-input select option:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
