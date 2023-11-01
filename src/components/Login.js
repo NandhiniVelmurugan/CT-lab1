@@ -18,9 +18,10 @@ const Login = () => {
 
   if (password === 'nandhini') {
     // Password matches
+    navigate('/homelog');
     alert('Login Successfully');
     // You can perform further actions, like setting a session or redirecting the user.
-    navigate('/homelog');
+    
   } else {
     // Password does not match
     alert('Invalid password');
