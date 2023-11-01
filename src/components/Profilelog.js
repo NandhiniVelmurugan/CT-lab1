@@ -8,7 +8,7 @@ function Profile() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      fetch('/getUserDetails', {
+      fetch('https://e-learning-website.onrender.com/getUserDetails', {
         headers: {
           Authorization: `Bearer ${token}`,
         },

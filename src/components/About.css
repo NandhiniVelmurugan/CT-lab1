@@ -386,11 +386,3 @@ header::before {
   margin: 0 auto;
   text-align: center;
 }
-body {
-  background-image: url('');
-  background-color: #f0f0f0; /* Fallback background color */
-  background-size: cover;
-  background-position: center top; /* Adjust the position if needed */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}

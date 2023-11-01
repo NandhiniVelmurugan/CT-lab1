@@ -35,10 +35,10 @@ function Navlog() {
       <ul className="nav-links">
         <li><Link to="/homelog">Home</Link></li>
         <li><Link to="/aboutlog">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/courses">Courses</Link></li>
+        <li><Link to="/contactlog">Contact</Link></li>
+        <li><Link to="/courseslog">Courses</Link></li>
         <li><Link to="/profile">Events</Link></li>
-        <li><Link to="/quiz">Achievement</Link></li>
+        <li><Link to="/quizlog">Achievement</Link></li>
       </ul>
       <ul className="nav-links nav-right">
         <li>{user && ( <Link to="/profilelog">
