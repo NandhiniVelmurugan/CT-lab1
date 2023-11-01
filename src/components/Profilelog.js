@@ -31,28 +31,28 @@ function Profile() {
           <div className="profile">
             <div className="profile-header">
               <div className="profile-info">
-                {user && (
+                
                   <div>
                     <p className="profile-h">PROFILE</p>
                     <hr />
                     <p className="profile-other">
-                      Username: {user.username}
+                      Username: Nandhini
                     </p>
                     <hr />
                     <p className="profile-other">
-                      Email: {user.email}
+                      Email: nandhini@gmail.com
                     </p>
                     <hr />
                     <p className="profile-other">
-                      First Name: {user.firstName}
+                      First Name: Nandhini
                     </p>
                     <hr />
                     <p className="profile-other">
-                      Registered Course:Computer Science {user.selectedCourse}
+                      Registered Course:Computer Science 
                     </p>
                     <hr />
                   </div>
-                )}
+               
               </div>
             </div>
           </div>
