@@ -45,7 +45,7 @@ function Navlog() {
         Nandhini</Link>
 
       </li>
-        <li><Link to="/home">Logout</Link></li>
+        <li><Link to="/">Logout</Link></li>
       </ul>
     </nav>
   );
