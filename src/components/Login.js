@@ -8,38 +8,24 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const navigate = useNavigate();
-  const handleLogin = async (e) => {
-    e.preventDefault();
+ const handleLogin = async (e) => {
+  e.preventDefault();
 
-    if (!username || !password) {
-      alert('Please fill in all fields'); 
-      return;
-    }
+  if (!username || !password) {
+    alert('Please fill in all fields');
+    return;
+  }
 
-    try {
-      const response = await fetch('https://e-learning-website.onrender.com/coachlog', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        localStorage.setItem('token', data.token);
-   
-        alert('Login Successfully');
-        navigate('/homelog');
-      } else {
-        alert('Invalid username or password'); 
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred during login.'); 
-    }
-  };
-
+  if (password === 'nandhini') {
+    // Password matches
+    alert('Login Successfully');
+    // You can perform further actions, like setting a session or redirecting the user.
+    // Example: navigate('/homelog');
+  } else {
+    // Password does not match
+    alert('Invalid password');
+  }
+};
   const containerStyle = {
     minHeight: '100vh',
     display: 'flex',
