@@ -20,7 +20,7 @@ const Login = () => {
     // Password matches
     alert('Login Successfully');
     // You can perform further actions, like setting a session or redirecting the user.
-    // Example: navigate('/homelog');
+    navigate('/homelog');
   } else {
     // Password does not match
     alert('Invalid password');
