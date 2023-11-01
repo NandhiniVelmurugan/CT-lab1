@@ -42,7 +42,7 @@ function Navlog() {
       </ul>
       <ul className="nav-links nav-right">
         <li> <Link to="/profilelog">
-        <span className="user-username">Nandhini</span></Link>
+        Nandhini</Link>
 
       </li>
         <li><Link to="/home">Logout</Link></li>
