@@ -6,86 +6,47 @@ class RegistrationForm extends Component {
   constructor() {
     super();
     this.state = {
-      firstName: "",
-      lastName: "",
-      username: "Nandhini",
-      email: "",
-      dateOfBirth: "",
-      age: "",
-      contactNumber: "",
-      selectedCourse: "Computer Science",
-      areaOfInterest: "",
-      message: "",
       registrationSuccess: false,
-      courses: [
-        "Computer Science",
-        "Programming and Software Development",
-        "Information Systems",
-        "Cybersecurity",
-        "Data Science and Data Analysis",
-        "Database Management",
-        "Networking"
-      ]
+      message: "",
+      formData: {
+        firstName: "",
+        lastName: "",
+        username: "Nandhini",
+        email: "",
+        dateOfBirth: "",
+        age: "",
+        contactNumber: "",
+        selectedCourse: "Computer Science",
+        areaOfInterest: "",
+      },
     };
   }
 
   handleInputChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    this.setState((prevState) => ({
+      formData: {
+        ...prevState.formData,
+        [name]: value,
+      },
+    }));
   };
 
-  handleSubmit = async (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
-    const {
-      firstName,
-      lastName,
-      username,
-      email,
-      dateOfBirth,
-      age,
-      contactNumber,
-      selectedCourse,
-      areaOfInterest
-    } = this.state;
+    // Check if all fields are filled
+    const { formData } = this.state;
+    const allFieldsFilled = Object.values(formData).every((field) => field !== "");
 
-    
-
-    try {
-      const response = await fetch('/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          firstName,
-          lastName,
-          username,
-          email,
-          dateOfBirth,
-          age,
-          contactNumber,
-          selectedCourse,
-          areaOfInterest
-        })
-      });
-
-      if (response.ok) {
-        this.setState({ registrationSuccess: true, message: "Registration successful!" });
-      } else {
-        const data = await response.json();
-        this.setState({ message: data.message });
-      }
-    } catch (error) {
-      console.error("Error:", error);
+    if (allFieldsFilled) {
+      this.setState({ registrationSuccess: true, message: "Registered Successfully!" });
+    } else {
+      this.setState({ message: "Please fill out all fields." });
     }
   };
 
   render() {
-    const {
-      registrationSuccess,
-      message,
-      selectedCourse,
-      courses
-    } = this.state;
+    const { registrationSuccess, message, formData } = this.state;
 
     return (
       <div className="wrapper">
@@ -131,7 +92,7 @@ class RegistrationForm extends Component {
             <div className="inputfield">
               <label>Email Address:</label>
               <input
-                type="nandhini@g.mail.com"
+                type="email"
                 className="input"
                 name="email"
                 placeholder="Email"
@@ -194,10 +155,10 @@ class RegistrationForm extends Component {
               <select
                 className="input"
                 name="selectedCourse"
-                value={selectedCourse}
+                value={formData.selectedCourse}
                 onChange={this.handleInputChange}
               >
-                {courses.map((course) => (
+                {["Computer Science", "Programming and Software Development", "Information Systems", "Cybersecurity", "Data Science and Data Analysis", "Database Management", "Networking"].map((course) => (
                   <option key={course} value={course}>
                     {course}
                   </option>
@@ -221,7 +182,9 @@ class RegistrationForm extends Component {
               </p>
             </div>
 
-            <p id="message">{message}</p>
+            <p id="message" className={registrationSuccess ? "success" : ""}>
+              {registrationSuccess ? "Registered Successfully!" : message}
+            </p>
 
             <div className="inputfield btns" id="btn">
               <button type="submit" className="btn">
@@ -230,17 +193,6 @@ class RegistrationForm extends Component {
             </div>
           </div>
         </form>
-
-        {registrationSuccess && (
-          <div className="alert">
-            <button
-              className="success-btn"
-              onClick={() => this.setState({ registrationSuccess: false })}
-            >
-              Close
-            </button>
-          </div>
-        )}
       </div>
     );
   }
