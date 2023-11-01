@@ -8,7 +8,7 @@ class RegistrationForm extends Component {
     this.state = {
       firstName: "",
       lastName: "",
-      username: "",
+      username: "Nandhini",
       email: "",
       dateOfBirth: "",
       age: "",
