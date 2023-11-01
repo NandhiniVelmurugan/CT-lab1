@@ -122,7 +122,7 @@ class RegistrationForm extends Component {
                 type="text"
                 className="input"
                 name="username"
-                placeholder="Username"
+                placeholder="Nandhini"
                 onChange={this.handleInputChange}
                 required
               />
@@ -131,7 +131,7 @@ class RegistrationForm extends Component {
             <div className="inputfield">
               <label>Email Address:</label>
               <input
-                type="email"
+                type="nandhini@g.mail.com"
                 className="input"
                 name="email"
                 placeholder="Email"
