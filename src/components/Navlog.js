@@ -41,10 +41,10 @@ function Navlog() {
         <li><Link to="/quizlog">Achievement</Link></li>
       </ul>
       <ul className="nav-links nav-right">
-        <li>{user && ( <Link to="/profilelog">
-        <span className="user-username">{user.username}</span></Link>
+        <li> <Link to="/profilelog">
+        <span className="user-username">Nandhini</span></Link>
 
-      )}</li>
+      </li>
         <li><Link to="/home">Logout</Link></li>
       </ul>
     </nav>
