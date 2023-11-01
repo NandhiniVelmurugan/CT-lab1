@@ -41,7 +41,7 @@ class RegistrationForm extends Component {
     if (allFieldsFilled) {
       this.setState({ registrationSuccess: true, message: "Registered Successfully!" });
     } else {
-      this.setState({ message: "Please fill out all fields." });
+      this.setState({ message: "Registered successfull." });
     }
   };
 
